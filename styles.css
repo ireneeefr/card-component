@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Raleway:wght@200;400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Raleway:wght@200;400;800&display=swap');
+/* Desktop style */
+
+/*General styles*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.mont {
+    font-family: 'Montserrat', sans-serif;
+}
+.fraun {
+    font-family: 'Fraunces', serif;
+}
+.cian {
+    color: hsl(158, 36%, 37%);
+}
+.gray {
+    color: hsl(228, 12%, 48%);
+}
+.dark {
+    color: hsl(212, 21%, 14%);
+}
+/*  General structure */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    background-color: hsl(30, 38%, 92%);
+    
+}
+.card {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 560px;
+    height: 60vh;
+    overflow: hidden;
+    border-radius: 12px;
+    margin: auto;
+}
+.img-container {
+    width: 50%;
+    flex: auto;
+    background-image: url(img/image-product-desktop.jpg);
+    background-size: cover;
+
+}
+
+.info {
+    width: 50%;
+    background-color: white;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding: 26px;
+    justify-content: space-between;
+    
+}
+
+/* Text styles */
+.subtitle {
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+}
+h3 {
+    font-size: 2rem;
+    line-height: 2.1rem;
+}
+ p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4rem;
+ }
+ .price {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 17px;
+    
+ }
+ .new-price {
+    font-size: 2rem;
+ }
+ .old-price {
+    text-decoration: line-through;
+    font-size: .8rem
+ }
+button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button:hover {
+    cursor: pointer;
+    background-color: hsl(158, 34%, 22%);
+}
+button img {
+    margin-right: 10px;
+}
+/*Mobile style*/
+@media (max-width: 560px) {
+   body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+   }
+    .card {
+        flex-direction: column;
+        min-height: 600px;
+        margin: auto;
+        width: 340px;
+        
+    }
+    .img-container {
+        width: 100%;
+        flex: 2;
+        background-position: 0px -120px;
+    }
+    .info {
+        width: 100%;
+        flex: 3;
+    }
+} 
